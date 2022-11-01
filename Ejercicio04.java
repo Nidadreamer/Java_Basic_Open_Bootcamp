@@ -10,13 +10,13 @@ public class Ejercicio04 {
     public static void main(String[] args) {
 
         SmartDevice.SmartPhone smartPhone = new SmartDevice.SmartPhone("Xiaomi", "Redmi Note 11 Pro", "Verde", "Android", 2022, 202, 48, false, 3);
-        System.out.println("--------** Especificaciones del SmartPhone **--------");
-        System.out.println("Marca y modelo: " + smartPhone.marca + " " + smartPhone.modelo + ", de color " + smartPhone.color + ", tiene " + smartPhone.numCamaras + " cámaras " + "y un peso de " + smartPhone.peso + "gr" + ". \nUsa como Sistema Operativo: " + smartPhone.os + ". La batería tiene una duración de " + smartPhone.horasBateria + " horas" + ". \n¿Se puede conectar a las redes 5G? = " + smartPhone.tecnologia5g + ". Fue fabricado en el año " + smartPhone.year);
+        System.out.println("\033[35m--------** Especificaciones del SmartPhone **--------\033[39;49m");
+        System.out.println("\033[36mMarca y modelo: \033[39;49m" + smartPhone.marca + " " + smartPhone.modelo + "\033[36m, de color \033[39;49m" + smartPhone.color + "\033[36m, tiene \033[39;49m" + smartPhone.numCamaras + "\033[36m cámaras y un peso de \033[39;49m" + smartPhone.peso + "gr.\033[36m \nUsa como Sistema Operativo: \033[39;49m" + smartPhone.os + "\033[36m.  La batería tiene una duración de \033[39;49m" + smartPhone.horasBateria + "\033[36m horas" + ". \n\033[36m¿Se puede conectar a las redes 5G? = \033[39;49m" + smartPhone.tecnologia5g + "\033[36m. \nFue fabricado en el año \033[39;49m" + smartPhone.year + "\033[36m.");
         System.out.println("  ");
 
         SmartDevice.SmartWatch smartWatch = new SmartDevice.SmartWatch("Garmin", "Vivoactive 4", "negro", "propio de Garmin", 2019, 50, 192, true, true);
-        System.out.println("--------** Especificaciones del SmartWatch **--------");
-        System.out.println("Marca y modelo: " + smartWatch.marca + " " + smartWatch.modelo + ", de color " + smartWatch.color + ", tiene un peso de " + smartWatch.peso + "gr" + ". \nUsa como Sistema Operativo: " + smartWatch.os + ". La batería tiene una duración de " + smartWatch.horasBateria + " horas" + ". Fue fabricado en el año " + smartWatch.year + ". \n¿Es sumergible? = " + smartWatch.sumergible + "  --  ¿Tiene la función de alarma si pasas muchas horas sentado? = " + smartWatch.alarmaSedentario);
+        System.out.println("\033[35m--------** Especificaciones del SmartWatch **--------\033[39;49m");
+        System.out.println("\033[36mMarca y modelo: \033[39;49m" + smartWatch.marca + " " + smartWatch.modelo + "\033[36m, de color \033[39;49m" + smartWatch.color + "\033[36m, tiene un peso de \033[39;49m" + smartWatch.peso + "gr\033[36m. \nUsa como Sistema Operativo: \033[39;49m" + smartWatch.os + "\033[36m. La batería tiene una duración de \033[39;49m" + smartWatch.horasBateria + "\033[36m horas. Fue fabricado en el año \033[39;49m" + smartWatch.year + "\033[36m. \n¿Es sumergible? = \033[39;49m" + smartWatch.sumergible + "\n\033[36m¿Tiene la función de alarma si pasas muchas horas sentado? = \033[39;49m" + smartWatch.alarmaSedentario);
 
     }
 
